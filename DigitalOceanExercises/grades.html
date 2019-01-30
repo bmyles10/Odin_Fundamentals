@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <script>
+
+    </script>
+</head>
+
+<body>
+
+
+    <script>
+        let num = parseInt(prompt("What was your grade: "));
+        
+
+        switch (true) {
+            // If score is 90 or greater
+            case num >= 90:
+                document.write("A");
+                break;
+                // If score is 80 or greater
+            case num >= 80:
+                document.write("B");
+                break;
+                // If score is 70 or greater
+            case num >= 70:
+                document.write("C");
+                break;
+                // If score is 60 or greater
+            case num >= 60:
+                document.write("D");
+                break;
+                // Anything 59 or below is failing
+            default:
+                document.write("F");
+        }
+        
+    </script>
+</body>
+
+</html>
