@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Testing
+    </title>
+    <script></script>
+</head>
+
+<body>
+    <p>
+
+        <b>When should you choose Function Declaration versus Function Expression?</b>
+
+        As a rule of thumb, when we need to declare a function, the first to consider is Function Declaration syntax,
+        the one we used before. It gives more freedom in how to organize our code, because we can call such functions
+        before they are declared.
+
+        It’s also a little bit easier to look up function f(…) {…} in the code than let f = function(…) {…}. Function
+        Declarations are more “eye-catching”.
+
+        …But if a Function Declaration does not suit us for some reason (we’ve seen an example above), then Function
+        Expression should be used.
+
+    </p>
+
+</body>
+<script>
+    let age = prompt("What is your age?", 18);
+    let welcome = (age < 18) ? function () {
+        alert('Hello!');
+    } : function () {
+        alert("Greetings!");
+    };
+
+    welcome();
+</script>
+
+</html>

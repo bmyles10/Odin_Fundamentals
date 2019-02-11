@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice</title>
+    </head>
+    <body>
+        <button>Change color</button>
+
+        <script>
+            let btn = document.querySelector('button');
+
+            let random = number => Math.floor(Math.random() *(number+1));
+
+            btn.onclick = () => {
+                let rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+                document.body.style.backgroundColor = rndCol;
+            }
+        </script>
+    </body>
+</html>

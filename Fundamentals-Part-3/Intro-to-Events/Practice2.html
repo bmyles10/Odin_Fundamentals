@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice 2</title>
+    </head>
+    <body>
+        <button>Change color</button>
+
+
+        <script>
+            let btn = document.querySelector('button');
+
+            let random = number => Math.floor(Math.random() * (number + 1));
+
+            let bgChange = () => { //Also can use btn.onclick as the function name, instead of let bgChange
+                let randomCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+                document.body.style.backgroundColor = randomCol;
+            }
+
+            btn.onclick = bgChange;
+
+
+        </script>
+    </body>
+</html>

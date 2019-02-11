@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Testing
+    </title>
+    <script></script>
+</head>
+
+<body>
+
+</body>
+<script>
+    //testing to see how/where a fucntion runs inside of a loop.
+    let age = prompt("What is your age", 18);
+
+    let welcome; //had to set this here so I can run the function outside of the loop.
+
+    if (age < 18) {
+        welcome();
+
+        function welcome() {
+            alert('Hello');
+        }
+
+        welcome();
+    } else {
+        function welcome() {
+            alert('Greetings!');
+        }
+    }
+
+    console.log(welcome());
+</script>
+
+</html>
