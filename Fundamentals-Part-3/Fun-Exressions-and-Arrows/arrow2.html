@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Testing
+    </title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function ask(question, yes, no) {
+        if (confirm(question)) yes()
+        else no();
+    }
+
+    function showOk() {
+        alert('you agree.');
+    }
+
+    function showCancel() {
+        alert("You canceled the execution");
+    }
+
+    ask("Do you agree?", showOk, showCancel)
+</script>
+
+</html>
