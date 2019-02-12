@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Random color example — event handler property</title>
+    <style>
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Change color</button>
+    <script>
+        let btn = document.querySelector('button');
+
+        let bgChange = () => {
+            let rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            document.body.style.backgroundColor = rndCol;
+        }
+
+        btn.addEventListener('click', bgChange);
+        //Remove above eventListener
+        btn.removeEventListener('click', bgChange);
+        //Can also put the function in the event listener
+        btn.addEventListener('click', function() {
+            let rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            document.body.style.backgroundColor = rndCol;
+        } );     
+
+        //Can also use
+
+        myElement.onclick = functionA;
+        myElement.onclick = functionB;
+
+        myElement.addEventListener('click', functionA);
+        myElement.addEventListener('click', functionB);
+    </script>
+</body>
+
+</html>
