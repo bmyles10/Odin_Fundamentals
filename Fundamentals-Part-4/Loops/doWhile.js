@@ -10,7 +10,7 @@ do{
     afcMessage += afcNorth[j] + ', ';
   }
 
-  i++
+  j++
 } while (j < afcNorth.length);
 
-console.log('Hello');
+console.log(afcMessage);

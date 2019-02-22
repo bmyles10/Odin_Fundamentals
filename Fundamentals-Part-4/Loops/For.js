@@ -11,6 +11,7 @@ while (i < support.length) {
     } else {
         slogan += support[i] + ', ';
     }
+    i++
 }
 
 /*
@@ -23,6 +24,5 @@ for (let i = 0; i < support.length; i++) {
     
 }
 */
-
 
 console.log(slogan);
