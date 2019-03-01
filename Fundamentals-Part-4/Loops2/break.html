@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+
+
+<script>
+  let sum = 0;
+
+while (true) {
+
+  let value = +prompt("Enter a number", '');
+  
+  if (!value) break; // (*)
+
+  alert('Push Cancel to get sum of numbers entered');
+  
+  sum += value;
+  
+}
+alert( 'Sum: ' + sum );
+</script>
