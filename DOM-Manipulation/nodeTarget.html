@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<div id="container">
+    <div class="display"></div>
+    <div class="controls"></div>
+</div>
+
+
+<script>
+    const container = document.querySelector('#container');
+    // select the #container div (don't worry about the syntax, we'll get there)
+
+    console.dir(container.firstElementChild);
+    // select the first child of #container => .display
+
+    const controls = document.querySelector('.controls');
+    // select the .controls div
+
+    console.dir(controls.previousElementSibling);
+    // selects the prior sibling => .display
+</script>
+
+</html>
