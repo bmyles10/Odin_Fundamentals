@@ -1,4 +1,4 @@
-<h1>Query Selectors<h1>
+<h1>Query Selectors</h1>
 
 * element.querySelector(selector) returns reference to the first match of selector
 * element.querySelectorAll(selectors) returns a “nodelist” containing references to all of the matches of the selectors There are several other, more specific queries, that offer potential(marginal) performance benefits, but we won’t be going over them now.
