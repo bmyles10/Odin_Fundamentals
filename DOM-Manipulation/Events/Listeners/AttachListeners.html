@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<div id="container">
+    <button id="1">Click Me</button>
+    <button id="2">Click Me</button>
+    <button id="3">Click Me</button>
+    <button id="4">CLick</button>
+    <button id="5">Click</button>
+    <button id="6">Clack</button>
+</div>
+
+<script>
+    // buttons is a node list. It looks and acts much like an array.
+    let buttons = document.querySelectorAll('button');
+    
+
+    // we use the .forEach method to iterate through each button
+    buttons.forEach((button) => {
+        // and for each one we add a 'click' listener
+        button.addEventListener('dblclick', (e) => {
+            alert(button.id);
+        });
+    });
+</script>

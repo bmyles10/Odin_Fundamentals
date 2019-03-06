@@ -5,6 +5,10 @@ btn.addEventListener('click', () => {
 let alertFunction = () => alert("What head cuh?");
 btn2.addEventListener('click', alertFunction);
 
+btn3.addEventListener('click', function(e){
+    e.target.style.background = 'blue';
+})
+
 /*
 
 Now, we maintain separation of concerns, and we also allow multiple event listeners if need arise. Method 3 is much more flexible and powerful, though it is a bit more complex to set up.
