@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<!-- 
+Some element attributes, such as href for links, can be accessed through a property of the same name on the element’s DOM object. This is the case for most commonly used standard attributes.
+
+But HTML allows you to set any attribute you want on nodes. This can be useful because it allows you to store extra information in a document. If you make up your own attribute names, though, such attributes will not be present as properties on the element’s node. Instead, you have to use the getAttribute and setAttribute methods to work with them.
+-->
+
+
+
+<!--
+    It is recommended to prefix the names of such made-up attributes with data- to ensure they do not conflict with any other attributes.
+-->
+<p data-classified="secret">The launch code is 00000000.</p>
+<p data-classified="unclassified">I have two feet.</p>
+
+<script>
+    let paras = document.body.getElementsByTagName("p");
+    for (let x of Array.from(paras)) {
+        if (x.getAttribute("data-classified") == "secret") {
+            x.remove();
+        }
+    }
+</script>

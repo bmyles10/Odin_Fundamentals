@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <div class="container">
+        <div id="intro"></div>
+        <div class="tr"> Node 0
+            <div class="little">
+                Node 1
+
+            </div>
+        </div>
+        <script>
+            //Assigned the container class to the varible.
+            let firstContainer = document.querySelector(".container");
+
+            //Assigns all elements in parameter to the varible
+            let allDivElements = document.querySelectorAll("div")
+
+            let allDivElements2 = document.getElementsByTagName("div");
+
+            let uniqueElementID = document.getElementById("intro");
+            console.log(uniqueElementID);
+
+            let firstTr = document.querySelector(".tr");
+            let trChildNodes = firstTr.childNodes;
+            let trChildNodesArray = Array.from(trChildNodes);
+
+            console.log(trChildNodesArray);
+        </script>
+    </div>
+
+</html>

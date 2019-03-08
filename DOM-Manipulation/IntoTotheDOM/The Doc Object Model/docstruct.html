@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>My home page</title>
+</head>
+
+<body>
+    <h1>My home page</h1>
+    <p>Hello, I am Marijn and this is my home page.</p>
+    <p>I also wrote a book! Read it
+        <a href="http://eloquentjavascript.net">here</a>.</p>
+    <p>My ostrich Gertrude:</p>
+    <p><img id="gertrude" src="img/ostrich.png"></p>
+
+
+
+
+</body>
+
+<script>
+    let link = document.body.getElementsByTagName("a")[0];
+    console.log(link.href);
+
+    let ostrich = document.getElementById("gertrude");
+    console.log(ostrich.src);
+</script>
+
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<button>Act-once button</button>
+
+
+<script>
+    let btn = document.querySelector("button");
+    let once = () => {
+        console.log('Done');
+        btn.document.removeEventListener("click", once);
+        
+    }   
+    btn.addEventListener("click", once); 
+
+</script>
