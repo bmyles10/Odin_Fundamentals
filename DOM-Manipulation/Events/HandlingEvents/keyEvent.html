@@ -1,0 +1,25 @@
+<h1>This page will turn green when you hold the 'g' key</h1>
+
+
+<script>    
+    let turnMeGreen = (e) => {
+        if (e.key == "g") {
+            document.body.style.background = "green";
+            console.clear();
+        }
+    };
+    let regBackground = (e) => {
+        if (e.key == "g") {
+            document.body.style.background = "";
+            console.clear();
+        }
+    };
+
+    let scrollDown = (e) => {
+        if (e.key == " " && e.ctrlKey) console.log("Roll on Pimp");
+    }
+
+    window.addEventListener("keyup", regBackground);    
+    window.addEventListener("keydown", turnMeGreen);
+    window.addEventListener("keydown", scrollDown);
+</script>
