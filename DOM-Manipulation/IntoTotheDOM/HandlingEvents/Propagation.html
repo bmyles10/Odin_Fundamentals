@@ -1,7 +1,5 @@
 <p>A paragraph with a <button>button</button>.</p>
-<button>A</button>
-<button>B</button>
-<button>C</button>
+
 
 <script>
     let btn = document.querySelector("button");
@@ -10,7 +8,7 @@
     para.addEventListener("mousedown", () => {
         console.log("Para was click");
     });
-    //You create an variable here so you use it for the 'if' statement
+    //You create an variable here so you use it for the 'if' statement.
     btn.addEventListener("mousedown", event =>{
         console.log("Button was fired off");
         if (event.button == 1) {
