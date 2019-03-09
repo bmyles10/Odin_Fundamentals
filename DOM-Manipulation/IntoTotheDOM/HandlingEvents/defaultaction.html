@@ -1,0 +1,12 @@
+<a href="https://developer.mozilla.org/">MDN</a>
+
+<script>
+    let link = document.querySelector("a");
+    let reRoute = (e) => {
+        console.log("This site had been blocked");
+        e.preventDefault();
+    }
+        
+    link.addEventListener("click", reRoute);
+
+</script>

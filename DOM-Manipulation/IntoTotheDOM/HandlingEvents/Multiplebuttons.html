@@ -1,0 +1,11 @@
+<button>A</button>
+<button>B</button>
+<button>C</button>
+
+<script>
+    let showLetter = (event) => {
+        if (event.target.nodeName === "BUTTON")
+            console.log("Clicked", event.target.textContent);
+        }
+    document.body.addEventListener("click", showLetter);
+</script>

@@ -2,12 +2,13 @@
 <button>Click me any way</button>
 <script>
     let btn = document.querySelector("button");
-    button.addEventListener("mousedown", event => {
+    btn.addEventListener("mousedown", event => {
                 if (event.button == 0) {
                     console.log("You clicked the left mouse button");
-                } else if (event.button == 0) {
+                } else if (event.button == 1) {
                     console.log("You clicked the middle button");
                 } else if (event.button == 2) {
                     console.log(" You clicked the Right button");
                 }
     });
+</script>
