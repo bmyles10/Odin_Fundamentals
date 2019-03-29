@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<! --
+For cases where you really do want to do some time-consuming thing in the background without freezing the page, browsers provide something called web workers. A worker is a JavaScript process that runs alongside the main script, on its own timeline.
+
+Imagine that squaring a number is a heavy, long-running computation that we want to perform in a separate thread. We could write a file called code/squareworker.js that responds to messages by computing a square and sending a message back.
+
+To avoid the problems of having multiple threads touching the same data, workers do not share their global scope or any other data with the main script’s environment. Instead, you have to communicate with them by sending messages back and forth.
+
+This code spawns a worker running that script, sends it a few messages, and outputs the responses.
+
+ -->
+
+ <script>
+     let squareWorker = new Worker("code/squareworkder.js");
+     squareWorker.addEventListener("message",event =>{
+         console.log("The worker responded:", event.data);
+     });
+
+     squareWorker.postMessage(10);
+     squareWorker.postMessage(24);
+
+ </script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+
+<script>
+    let bombTimer = setTimeout(() => {
+        console.log("BOOM!");
+    }, 4000);
+
+
+
+    let ticks = 0;
+    let clock = setInterval(() => {
+        console.log("tick", ticks++);
+        if (ticks == 10) {
+            clearInterval(clock);
+            console.log("stop.");
+        }
+    }, 200);
+
+
+    
+    if (Math.random() < 0.5) {
+        //50% chance
+        console.log(Math.random())
+        setTimeout(() => {
+            console.log("Defused");
+            clearTimeout(bombTimer);
+        }, 3000);
+    };
+
+    console.log(Math.random())
+</script>

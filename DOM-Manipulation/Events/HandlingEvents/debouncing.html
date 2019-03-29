@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<textarea>Type something here...</textarea>
+<script>
+    let textarea = document.querySelector("textarea");
+    let timeout;
+    textarea.addEventListener("input", () =>{
+        clearTimeout(timeout);
+        timeout = setTimeout(
+            () => console.log("Typed!"), 
+            500
+        );
+    });
+</script>

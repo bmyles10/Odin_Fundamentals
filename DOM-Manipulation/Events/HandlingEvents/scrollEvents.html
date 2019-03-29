@@ -1,0 +1,25 @@
+<style>
+    #progress {
+        border-bottom: 2px solid blue;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+</style>
+<div id="progress"></div>
+<script>
+    //Create something
+    let saySomething = prompt("Enter what you'd like to repeat")
+    document.body.appendChild(document.createTextNode(saySomething  .repeat(1000)));
+
+    let bar = document.getElementById("progress");
+    let proceed = () => {
+        let max = document.body.scrollHeight - innerHeight;
+        bar.style.width = `${(pageYoffset / max) * 100}%`;
+    }
+
+
+
+    window.addEventListener("scroll", proceed);
+</script>
