@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<script>
+    //An object declared as const can be changed.
+    const user = {
+        name: "Theo",
+    };
+
+    user.age = 39;
+    alert(user.age);
+
+    //The const would give an error if we try to set user to something else, for instance:
+    const user2 = {
+        name = 'Brandon',
+    };
+
+    user = {
+        name = "Pete",
+    };
+</script>

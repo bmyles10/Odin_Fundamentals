@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<script>
+    let codes = {
+        "49": "Germany",
+        "41": "Swiss",
+        "44": "Britain",
+        "1": "USA"
+    };
+    //The code will run the numbers in numerial order. 
+    for (let code in codes) {
+        alert(code);
+    }
+
+
+    let user = {
+        name: "Brandon",
+        surname: "Myles"
+    };
+    user.age = 30;
+    //non-integer properties are listed in the creation order
+    for (let prop in user){
+        console.log(prop);
+    }
+
+    //So, to fix the issue with the phone codes, we can “cheat” by making the codes non-integer. Adding a plus "+" sign before each code is enough.
+    let phoneCode = {
+        "+49": "Germany",
+        "+41": "Swiss",
+        "+44": "Britain",
+        "+1": "USA"
+    };
+
+    for (let phoCo in phoneCode) {
+        console.log(+phoCo);
+    }
+
+</script>
