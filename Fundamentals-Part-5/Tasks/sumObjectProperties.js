@@ -1,4 +1,3 @@
-
 /*Write the code to sum all salaries and store in the variable sum. Should be 390 in the example above.
 
 If salaries is empty, then the result must be 0.
@@ -11,7 +10,8 @@ let salaries = {
 };
 
 let sum = 0;
-for (let salary in salaries){
+for (let salary in salaries) {
     sum += salaries[salary];
-    
-}console.log(sum) 
+
+}
+console.log(sum)
